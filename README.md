@@ -26,13 +26,12 @@ Repositorio de práctica personal con informes (*writeups*) de máquinas de Dock
 |---|---|---|
 | Injection | [Ver informe](Laboratorios%20-%20F%C3%A1cil/Injection/INFORME.md) | 7 capturas |
 | Whoiam | [Ver informe](Laboratorios%20-%20F%C3%A1cil/Whoiam/INFORME.md) | 19 capturas |
-| Pequenas-Mentirosas | [Ver informe](Laboratorios%20-%20F%C3%A1cil/Pequenas-Mentirosas/INFORME.md) | 9 capturas |
+| Pequeñas-Mentirosas | [Ver informe](Laboratorios%20-%20F%C3%A1cil/Pequenas-Mentirosas/INFORME.md) | 9 capturas |
 
 ## Estructura
 
 - Cada máquina tiene su propio archivo `INFORME.md`.
 - Las capturas se guardan en la carpeta `Capturas` de cada laboratorio.
-- Los enlaces a imágenes se han convertido a rutas relativas compatibles con GitHub.
 
 ## Herramientas y técnicas documentadas
 
