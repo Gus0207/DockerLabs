@@ -134,26 +134,26 @@ root
 
 ## 🛠️ FASE 4: RECOMENDACIONES DE MITIGACIÓN
 
- >[!Danger] CWE-250
+CWE-250 Crítica
 
->[!Danger] Crítica
 >Permisos sudo excesivos permiten saltar de `tails` a `sonic` y de `sonic` a `root` (sonic puede ejecutar cualquier comando como cualquier usuario)
  
- >[!Todo] Mitigación
+Mitigación
+
  >Auditar de forma recurrente las políticas de `/etc/sudoers`. Evitar la delegación indiscriminada del parámetro `NOPASSWD` a utilidades del sistema capaces de invocar shells secundarias.
 
->[!Warning] CWE-521
+CWE-521 Alta
 
->[!Warning] Alta
 >La contraseña está en variantes de rockyou, accesible por SSH mediante fuerza bruta.
 
->[!Todo] Mitigación
+Mitigación
+
 >Instalar y configurar herramientas defensivas como **Fail2Ban** en el servicio SSH para mitigar y bloquear de forma automática direcciones IP sospechosas que realicen ataques por diccionario de manera consecutiva.
 
->[!Info] CWE-200
+CWE-200 Baja
 
->[!Info] Baja
 >La web muestra el nombre de usuario `tails`, dando a entender una pista para el ataque de fuerza bruta
 
->[!Todo] Mitigación
+Mitigación
+
 >Asegurar que ninguna ruta pública del servidor HTTP filtre o aloje archivos de texto con nombres de usuarios, lógicas de contraseñas ni pistas de configuración interna.
