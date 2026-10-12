@@ -123,36 +123,29 @@ root
 
 ## 🛠️ FASE 5: VULNERABILIDADES Y MITIGACIONES 
 
->CWE-269
+CWE-269 Crítico
 
->Crítico
->
 >Gestión Inadecuada de Privilegios. Ya dentro de la maquina comprometida con un usuario inicial, el comando sudo -l nos informa sobre la posibilidad de obtener permisos de forma excesiva. 
 
-> Mitigación
-> 
+Mitigación
+
 >Aplicar el principio de mínimo privilegio para sudoers
->
 >Evitar otorgar permisos NOPASSWD a comandos de utilidad o editores de texto que cuenten con funciones nativas de escape a la shell
 
 
->CWE-307
+CWE-307 Crítico
 
->Crítico
->
 >Una vez obtenido el usuario desde la web, el servicio SSH permite realizar un número indefinido de solicitudes de autenticación sin bloquear las conexiones, facilitando el acceso con ataques automáticos (En este caso, el uso de Hydra para la obtención de credenciales)
 
->Mitigación
->
+Mitigación
+
 >Utilizar herramientas como Fail2Ban para banear temporal o permanentemente las direcciones IP que superen una cierta cantidad de intentos fallidos al momento de intentar forzar el ingreso.
 
->CWE-200
+CWE-200 Alto
 
->Alto
->
 >Mediante el escaneo de la web, se localizan recursos o cadenas de texto ocultas que se pueden interpretar como pistas o posibles vectores de ataque por los cuales extraer información. En este caso, el servicio web actúa como un repositorio inseguro al dejar accesibles archivos que contienen información crucial para la obtención de credenciales.
 
->Mitigación
->
+Mitigación
+
 >Remover cualquier archivo de texto, comentarios HTML o scripts dentro del código fuente de la web
 
