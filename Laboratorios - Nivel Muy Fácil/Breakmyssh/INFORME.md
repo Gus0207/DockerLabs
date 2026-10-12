@@ -90,19 +90,19 @@ root
 
 ## 🛠️ FASE 4: VULNERABILIDADES Y MITIGACIONES
 
->[!Danger] CWE-521
+CWE-521 Crítica
 
->[!Danger] Crítica
 >La contraseña es débil y se encuentra en el listado de contraseñas y el acceso a `root` es directo, sin ninguna medida de protección o limite de intentos  
 
->[!Todo] Mitigación
+Mitigación
+
 >Configurar un software de prevención de intrusiones para bloquear temporal o permanentemente direcciones IP que fallen múltiples intentos de autenticación.
 >Prohibir de forma estricta contraseñas cortas o que formen parte de diccionarios públicos masivos como `rockyou.txt`.
 
->[!Warning] CWE-250
+CWE-250 Alta
 
->[!Warning] Alta
 >Permitir el acceso directo de `root` por SSH expone la cuenta más crítica del sistema al ataque.
 
->[!Todo] Mitigación
+Mitigación
+
 >PermitRootLogin no y operar con un usuario sin privilegios.
