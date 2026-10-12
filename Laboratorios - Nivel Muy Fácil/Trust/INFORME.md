@@ -130,26 +130,26 @@ root
 
 ## 🛠️ FASE 4: VULNERABILIDADES Y MITIGACIONES
 
->[!Danger] CWE-250
+CWE-250 Crítica
 
->[!Danger] Crítica
 >mario puede ejecutar `vim` como `root`, debido a que se lanza una shell y gracias a esto podemos escalar a `root` (GTFOBins)
 
->[!Todo] Mitigación
+Mitigación
+
 >Revocar permisos `NOPASSWD` a editores o herramientas capaces de romper el flujo del entorno (`vim`, `nano`, `less`), ya que permiten ejecuciones de comandos arbitrarios sin restricciones.
 
->[!Warning] CWE-521
+CWE-521 Alta
 
->[!Warning] Alta
 >El usuario `mario` tiene una contraseña débil y esta expuesta en el diccionario `rockyou` por el cual podemos acceder mediante un ataque de fuerza bruta por SSH
 
->[!Todo] Mitigación
+Mitigación
+
 >Revisar las contraseñas de cuentas locales para evitar el uso de cadenas de texto simples expuestas en diccionarios masivos, autenticaciones por clave y bloqueo de intentos `Fail2Ban`
 
->[!Warning] CWE-200
+CWE-200 Medio
 
->[!Warning] Medio
 >Mediante el fuzzing de web encontramos un `secret.php` que deja ver el nombre de un usuario válido `mario`, que sirve de objetivo para la fuerza bruta
 
->[!Todo] Mitigación
+Mitigación
+
 >Evitar almacenar nombres reales, cuentas o rutas experimentales (`secret.php`) legibles en directorios de producción de servidores web expuestos y controlar el acceso a los recursos no públicos.
