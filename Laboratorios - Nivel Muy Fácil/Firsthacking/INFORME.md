@@ -88,11 +88,11 @@ root
 
 ## 🛠️ FASE 4: VULNERABILIDADES Y MITIGACIONES
 
->[!DANGER] CWE-506
+CWE-506 Crítica
 
->[!DANGER] Crítica
 >La versión de vsftpd 2.3.4 (CVE-2011-2523) contiene una puerta trasera que otorga una shell como root sin autenticación necesaria.
 
->[!Todo] Mitigación
+Mitigación
+
 >Desinstalar inmediatamente la versión obsoleta y comprometida `vsftpd 2.3.4` y actualizar el servicio de transferencia de archivos a una versión segura y oficialmente soportada.
 Configurar políticas de filtrado que bloqueen de forma proactiva puertos de alta numeración no estandarizados (como el `6200`) para mitigar la efectividad de backdoors en entornos expuestos.
