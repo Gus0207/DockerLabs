@@ -148,26 +148,26 @@ root
 
 ## 🛠️ FASE 4: VULNERABILIDADES Y MITIGACIONES
 
->[!Danger] CWE-250
+CWE-250 Crítica
 
->[!Danger] Crítica
 >Poder ejecutar /bin/bash como cualquier usuario sin contraseña es una shell de root. 
 
->[!Todo] Mitigación 
+Mitigación
+
 >Evitar asignar permisos `sudo NOPASSWD` a comandos de sistema que posean funcionalidades nativas para spawnear shells o leer archivos arbitrarios.
 
->[!Warning] CWE-521
+CWE-521 Alta
 
->[!Warning] Alta
 > El usuario utiliza una contraseña extremadamente simple (123456) y fácilmente accesible por SSH mediante fuerza bruta
 
->[!Todo] Mitigación
+Mitigación
+
 >Utilizar contraseñas de gran longitud, bloqueo de intentos y sistema de autenticación para las contraseñas. 
 
->[!Warning] CWE-200
+CWE-200 Alta
 
->[!Warning] Alta
 >Los metadatos conseguidos de la herramienta Exiftool de la imagen publicada filtran un nombre de usuario válido `borazuwarah`.
 
->[!Todo] Mitigación
+Mitigación
+
 >Cualquier recurso estático subido a un servidor web público debe pasar por un proceso de sanitización para eliminar cadenas de texto, nombres o credenciales en sus metadatos.
