@@ -180,18 +180,18 @@ root
 
 ## 🛠️ FASE 5: VULNERABILIDADES Y MITIGACIONES 
 
->[!DANGER] CWE-434
+CWE-434 Crítico
 
->[!Danger] Crítico 
 > Permite el acceso inicial remoto sin autenticación. Un atacante externo puede ejecutar código arbitrario directamente en el servidor web desde internet, rompiendo la confidencialidad e integridad inicial de forma inmediata.
 
->[!Todo] Mitigación 
->antener todos los componentes, plantillas y plugins de WordPress actualizados a sus versiones estables más recientes para evitar vectores RCE conocidos.
+Mitigación
 
->[!Warning] CWE-732
+>Mantener todos los componentes, plantillas y plugins de WordPress actualizados a sus versiones estables más recientes para evitar vectores RCE conocidos.
 
->[!Warning] Alto 
-Permite un movimiento lateral y elevación interna. Aunque requiere que el atacante ya esté dentro del sistema (como `www-data`), la falta de restricciones permite saltar de un usuario a otro de forma trivial y garantizada sin conocer sus contraseñas.
+CWE-732 Alto
 
->[!Todo] Mitigación
+>Permite un movimiento lateral y elevación interna. Aunque requiere que el atacante ya esté dentro del sistema (como `www-data`), la falta de restricciones permite saltar de un usuario a otro de forma trivial y garantizada sin conocer sus contraseñas.
+
+Mitigación
+
 >Revisar y restringir los permisos otorgados en `/etc/sudoers`. Evitar que usuarios iniciales ejecuten comandos interactivos (`find`, `debugfs`) capaces de spawnear shells secundarias de otros usuarios.
