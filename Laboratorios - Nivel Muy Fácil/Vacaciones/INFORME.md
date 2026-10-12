@@ -144,39 +144,36 @@ root
 
 ## 🛠️ FASE 5: VULNERABILIDADES Y MITIGACIONES
 
-> CWE-250 Crítica
+ CWE-250 Crítica
 
 > El usuario `juan` puede ejecutar ruby como root sin contraseña.
 
-> Mitigación
+ Mitigación
 
 > No delegar permisos completos de `sudo` a lenguajes de programación o intérpretes de comandos (`Ruby`, `Python`, `Perl`) de forma libre, ya que rompen de manera las restricciones del sistema.
 
-> CWE-521 Alta
+ CWE-521 Alta
 
 > El usuario utiliza una contraseña simple (`password1`) y fácilmente accesible por SSH mediante fuerza bruta
 
-> Mitigación
+ Mitigación
 
 > Utilizar contraseñas de gran longitud, bloqueo de intentos y sistema de autenticación para las contraseñas. 
 
-> CWE-312 Alta
+ CWE-312 Alta
 
 >Un correo en /var/mail/camilo guarda en claro la contraseña del usuario `juan`, permitiendo el movimiento lateral entre cuentas.
 
-> Mitigación
+ Mitigación
 
 > Implementar restricciones estrictas en los directorios de mensajería (`/var/mail/`) para que únicamente el destinatario legítimo pueda leer el contenido.
 
-> CWE-200 Baja
+ CWE-200 Baja
 
 > El mensaje en el código fuente HTML nombra a `juan` y `camilo` los cuales se pueden suponer son usuarios, siendo posibles objetivos de ataques mediante fuerza bruta.
 
-> Mitigación
+ Mitigación
 
 > Evitar dejar nombres de usuario, autores o pistas de configuración en los comentarios del código fuente de producción (`HTML/JS`).
 
-
-> 📝 **Desconfiguración Identificada**
-> El listado de resultados expone una anomalía crítica: el binario **`/usr/bin/env`** tiene asignados permisos SUID.
 
