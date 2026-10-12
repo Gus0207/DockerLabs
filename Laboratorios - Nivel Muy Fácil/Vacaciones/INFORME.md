@@ -144,38 +144,37 @@ root
 
 ## 🛠️ FASE 5: VULNERABILIDADES Y MITIGACIONES
 
->[!Danger] CWE-250
+> CWE-250 Crítica
 
->[!Danger] Crítica
->El usuario `juan` puede ejecutar ruby como root sin contraseña.
+> El usuario `juan` puede ejecutar ruby como root sin contraseña.
 
->[!Todo] Mitigación
->No delegar permisos completos de `sudo` a lenguajes de programación o intérpretes de comandos (`Ruby`, `Python`, `Perl`) de forma libre, ya que rompen de manera las restricciones del sistema.
+> Mitigación
 
->[!Warning] CWE-521
+> No delegar permisos completos de `sudo` a lenguajes de programación o intérpretes de comandos (`Ruby`, `Python`, `Perl`) de forma libre, ya que rompen de manera las restricciones del sistema.
 
->[!Warning] Alta
+> CWE-521 Alta
+
 > El usuario utiliza una contraseña simple (`password1`) y fácilmente accesible por SSH mediante fuerza bruta
 
->[!Todo] Mitigación
->Utilizar contraseñas de gran longitud, bloqueo de intentos y sistema de autenticación para las contraseñas. 
+> Mitigación
 
->[!Warning] CWE-312
->
+> Utilizar contraseñas de gran longitud, bloqueo de intentos y sistema de autenticación para las contraseñas. 
 
->[!Warning] Alta
+> CWE-312 Alta
+
 >Un correo en /var/mail/camilo guarda en claro la contraseña del usuario `juan`, permitiendo el movimiento lateral entre cuentas.
 
->[!Todo] Mitigación
+> Mitigación
+
 > Implementar restricciones estrictas en los directorios de mensajería (`/var/mail/`) para que únicamente el destinatario legítimo pueda leer el contenido.
 
->[!Info] CWE-200
+> CWE-200 Baja
 
->[!Info] Baja
->El mensaje en el código fuente HTML nombra a `juan` y `camilo` los cuales se pueden suponer son usuarios, siendo posibles objetivos de ataques mediante fuerza bruta.
+> El mensaje en el código fuente HTML nombra a `juan` y `camilo` los cuales se pueden suponer son usuarios, siendo posibles objetivos de ataques mediante fuerza bruta.
 
->[!Todo] Mitigación
->Evitar dejar nombres de usuario, autores o pistas de configuración en los comentarios del código fuente de producción (`HTML/JS`).
+> Mitigación
+
+> Evitar dejar nombres de usuario, autores o pistas de configuración en los comentarios del código fuente de producción (`HTML/JS`).
 
 
 > 📝 **Desconfiguración Identificada**
