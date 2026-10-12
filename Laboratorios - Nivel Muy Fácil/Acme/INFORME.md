@@ -102,18 +102,18 @@ root
 
 ## 🛠️ FASE 4: VULNERABILIDADES Y MITIGACIONES
 
->[!Danger] CWE-250
+CWE-250 Crítico
 
->[!Danger] CRITICO
 >Escalada a root por bit SUID en /usr/bin/bash
 
->[!Todo] Mitigación
+Mitigación
+
 >Quitar el SUID y auditar periódicamente los binarios con SUID.
 
->[!Warning] CWE-200
+CWE-200 Alta
 
->[!Warning] ALTA
 >Al ingresar al servidor, el banner SSH brinda un usuario y una contraseña previo a la autenticación para cualquier persona que se conecte. 
 
->[!Todo] Mitigación
+Mitigación
+
 >Enviar cualquier tipo de credencial por un canal seguro y no incluir estos en los banners
