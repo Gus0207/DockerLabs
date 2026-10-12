@@ -2,7 +2,7 @@
 
 Repositorio de práctica personal con informes (*writeups*) de máquinas de DockerLabs. Cada informe documenta el reconocimiento, la enumeración, la explotación y/o la escalada de privilegios realizada en un entorno de laboratorio autorizado.
 
-> **Uso responsable:** el contenido está destinado al aprendizaje y a la práctica en laboratorios propios o autorizados. No utilices estas técnicas contra sistemas sin permiso.
+> **Uso responsable:** el contenido está destinado al aprendizaje y a la práctica en laboratorios propios o autorizados.
 
 ## Laboratorios
 
